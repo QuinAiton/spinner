@@ -3,7 +3,7 @@ const spinner = () => {
   setInterval(() => {
     if (time === 100) {
       process.stdout.write('\r/   ');
-    } else if (time == 300) {
+    } else if (time === 300) {
       process.stdout.write('\r-   ');
     } else if (time === 500) {
       process.stdout.write('\r\\   ');
@@ -11,6 +11,6 @@ const spinner = () => {
       process.stdout.write('\r|   ');
     }
     time += 200;
-  }, 700)
-}
-console.log(spinner())
+  }, 700);
+};
+console.log(spinner());
